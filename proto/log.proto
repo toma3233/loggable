@@ -5,7 +5,7 @@ option go_package = "buf.build/gen/go/toma3233/loggable/protocolbuffers/go/proto
 // Import the google/protobuf/descriptor.proto file.
 import "google/protobuf/descriptor.proto";
 
-// Define a custom option for fields that indicates whether they should be logged or not.
+// Define a custom option for fields that indicates whether they should be logged or not
 extend google.protobuf.FieldOptions {
-  optional bool loggable = 50001;
+  optional bool loggable = 50001 [default = true];
 }
